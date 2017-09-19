@@ -4,4 +4,9 @@
 tw= int (input ("numbers of hours to wait"))
 tn= int (input ("what time is now"))
 a = (tw + tn) % 24
-print (a , ":00")
+if a > 12:
+    a= a -12
+    print (str(a) + "PM")
+else:
+    print (str(a) + "AM")
+    
